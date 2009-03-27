@@ -10,6 +10,7 @@ URL: http://www.kde.org
 Source0: ftp://ftp.kde.org/pub/kde/stable/%version/src/oxygen-icons-%version.tar.bz2
 Conflicts: kdebase4-workspace < 2:4.1.96-1
 Conflicts: kappfinder < 1:4.1.96-2
+BuildRoot: %_tmppath/%name-%version-%release-root
 
 %description
 Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
