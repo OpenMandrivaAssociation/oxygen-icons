@@ -18,7 +18,7 @@ Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
 
 %files
 %defattr(-,root,root,-)
-%_kde_iconsdir/oxygen
+%_iconsdir/oxygen
 %{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.*
 
 #-----------------------------------------------------------------------------
