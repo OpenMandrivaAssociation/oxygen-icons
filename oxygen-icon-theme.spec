@@ -8,6 +8,7 @@ Provides: kde4-icon-theme
 Obsoletes: kdelibs4-common >= 30000000:3.80.3
 URL: http://www.kde.org
 Source0: ftp://ftp.kde.org/pub/kde/stable/%version/src/oxygen-icons-%version.tar.bz2
+BuildRequires: cmake
 Conflicts: kdebase4-workspace < 2:4.1.96-1
 Conflicts: kappfinder < 1:4.1.96-2
 BuildRoot: %_tmppath/%name-%version-%release-root
@@ -26,7 +27,7 @@ Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
 %setup -q -n oxygen-icons-%version
 
 %build
-%cmake_kde4
+%cmake
 %make
 
 %install
