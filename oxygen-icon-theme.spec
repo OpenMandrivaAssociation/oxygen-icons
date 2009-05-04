@@ -1,17 +1,18 @@
-%define kderevision svn954171
+%define kderevision svn961800
 
 Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
-Version: 4.2.70
+Version: 4.2.71
 Release: %mkrel 0.%kderevision.1
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
 Obsoletes: kdelibs4-common >= 30000000:3.80.3
 URL: http://www.kde.org
-Source0: ftp://ftp.kde.org/pub/kde/stable/%version/src/oxygen-icons-%version.%kderevision.tar.bz2
+Source0: ftp://ftp.kde.org/pub/kde/unstable/%version/src/oxygen-icons-%version.%kderevision.tar.bz2
 BuildRequires: cmake
+BuildArch: noarch
 Conflicts: kdebase4-workspace < 2:4.1.96-1
 Conflicts: kappfinder < 1:4.1.96-2
 BuildRoot: %_tmppath/%name-%version-%release-root
@@ -31,7 +32,6 @@ Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
 
 %build
 %cmake
-%make
 
 %install
 rm -rf %buildroot
