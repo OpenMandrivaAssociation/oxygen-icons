@@ -2,7 +2,7 @@ Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
 Version: 4.2.85
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
@@ -13,6 +13,7 @@ BuildRequires: cmake
 BuildArch: noarch
 Conflicts: kdebase4-workspace < 2:4.1.96-1
 Conflicts: kappfinder < 1:4.1.96-2
+Conflicts: kdepim4-core < 2:4.2.71
 BuildRoot: %_tmppath/%name-%version-%release-root
 
 %description
