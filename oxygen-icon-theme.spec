@@ -1,9 +1,9 @@
-%define kde_snapshot svn1040395
+%define kde_snapshot svn1048496
 
 Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
-Version: 4.3.73
+Version: 4.3.75
 Release: %mkrel 1
 Epoch: 1
 License: GPL
