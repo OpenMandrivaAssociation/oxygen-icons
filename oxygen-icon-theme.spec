@@ -49,9 +49,6 @@ Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
 
 %build
 %cmake_kde4
-pushd 8x8/emblems
-ls
-popd
 %install
 rm -rf %buildroot
 
