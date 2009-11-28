@@ -10,7 +10,7 @@ Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
 Version: 4.3.77
-Release: %mkrel 1
+Release: %mkrel 2 
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
@@ -31,7 +31,7 @@ Conflicts: kdeedu4-core < 4.3.0-3
 BuildRoot: %_tmppath/%name-%version-%release-root
 
 %description
-Oxygen KDE 4 icon theme. Complains with FreeDesktop.org naming schema
+Oxygen KDE 4 icon theme. Complaint with FreeDesktop.org naming schema
 
 %files
 %defattr(-,root,root,-)
