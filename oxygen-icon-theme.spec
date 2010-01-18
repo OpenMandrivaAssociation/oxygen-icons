@@ -10,7 +10,7 @@ Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
 Version: 4.3.90
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
@@ -36,6 +36,8 @@ Oxygen KDE 4 icon theme. Compliant with FreeDesktop.org naming schema
 %files
 %defattr(-,root,root,-)
 %_iconsdir/oxygen
+# This is needed as hicolor is the fallback for icons
+%_kde_iconsdir/hicolor/*/apps/*
 %{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.*
 
 #-----------------------------------------------------------------------------
@@ -67,6 +69,13 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 EOF
 chmod 755 %buildroot%{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.script
+
+# We copy some missing icons from oxygen to hicolor
+for size in 16 32 48 64 128; do
+    mkdir -p %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/office-address-book.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/bovo.png  %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+done
 
 %clean
 rm -fr %buildroot
