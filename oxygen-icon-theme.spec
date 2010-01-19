@@ -76,6 +76,7 @@ for size in 16 32 48 64 128; do
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/office-address-book.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/bovo.png  %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/krdc.png  %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/akonadi.png  %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
 done
 
 %clean
