@@ -10,7 +10,7 @@ Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
 Version: 4.3.90
-Release: %mkrel 3
+Release: %mkrel 4
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
@@ -89,7 +89,6 @@ for size in 16 32 48 64 128; do
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kjournal.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kivio.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kexi.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
-    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kcolorchooser.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/karbon.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
 done
 
