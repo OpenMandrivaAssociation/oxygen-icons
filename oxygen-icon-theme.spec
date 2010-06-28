@@ -88,6 +88,8 @@ for size in 16 32 48 64 128; do
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kjournal.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kivio.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kexi.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/preferences-desktop-text-to-speech.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/utilities-file-archiver.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
 done
 
 %clean
