@@ -10,7 +10,7 @@ Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
 Version: 4.4.3
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch: 1
 License: GPL
 Provides: kde4-icon-theme
@@ -90,6 +90,14 @@ for size in 16 32 48 64 128; do
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/kexi.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/preferences-desktop-text-to-speech.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
     %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/utilities-file-archiver.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/preferences-plugin.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/apps/nepomuk.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+done
+
+# We copy some missing icons from oxygen to hicolor
+for size in 16 22 32 48 ; do
+    mkdir -p %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
+    %__cp %buildroot%_kde_iconsdir/oxygen/${size}x${size}/actions/trash-empty.png %buildroot/%_datadir/icons/hicolor/${size}x${size}/apps
 done
 
 %clean
