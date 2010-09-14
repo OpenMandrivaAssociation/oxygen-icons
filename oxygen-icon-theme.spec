@@ -1,15 +1,14 @@
 %define branch 1
 %{?_branch: %{expand: %%global branch 1}}
 
-
 %if %branch
-%define kde_snapshot svn1170578
+%define kde_snapshot svn1174542
 %endif
 
 Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
-Version: 4.5.67
+Version: 4.5.68
 Release: %mkrel 1
 Epoch: 1
 License: GPL
@@ -51,6 +50,7 @@ Oxygen KDE 4 icon theme. Compliant with FreeDesktop.org naming schema
 
 %build
 %cmake_kde4
+
 %install
 rm -rf %buildroot
 
