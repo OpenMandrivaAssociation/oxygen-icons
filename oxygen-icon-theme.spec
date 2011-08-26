@@ -25,7 +25,6 @@ Oxygen KDE 4 icon theme. Compliant with FreeDesktop.org naming schema
 %_iconsdir/oxygen
 # This is needed as hicolor is the fallback for icons
 %_kde_iconsdir/hicolor/*/apps/*
-%{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.*
 
 #-----------------------------------------------------------------------------
 
