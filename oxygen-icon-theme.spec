@@ -8,7 +8,7 @@ License: GPL
 Provides: kde4-icon-theme
 Obsoletes: kdelibs4-common >= 30000000:3.80.3
 URL: http://www.kde.org
-Source0: ftp://ftp.kde.org/pub/kde/unstable/%version/src/oxygen-icons-%version.tar.xz
+Source0: ftp://ftp.kde.org/pub/kde/stable/%version/src/oxygen-icons-%version.tar.xz
 BuildRequires: cmake
 BuildRequires: kde4-macros
 BuildArch: noarch
