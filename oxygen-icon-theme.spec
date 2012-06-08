@@ -1,7 +1,7 @@
 Name: oxygen-icon-theme
 Summary: Oxygen icon theme
 Group: Graphical desktop/KDE
-Version: 4.8.3
+Version: 4.8.4
 Release: 1
 Epoch: 1
 License: GPL
