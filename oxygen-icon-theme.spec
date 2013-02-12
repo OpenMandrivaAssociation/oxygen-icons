@@ -63,7 +63,6 @@ for size in 16 32 48 64 128; do
     cp %{buildroot}%{_kde_iconsdir}/oxygen/${size}x${size}/apps/klipper.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
     cp %{buildroot}%{_kde_iconsdir}/oxygen/${size}x${size}/apps/kjournal.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
     cp %{buildroot}%{_kde_iconsdir}/oxygen/${size}x${size}/apps/kivio.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde_iconsdir}/oxygen/${size}x${size}/apps/kexi.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
 done
 
 %post
@@ -75,6 +74,7 @@ done
 %changelog
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.0-1
 - New version 4.10.0
+- Dont copy kexi icon
 
 * Sun Jan 13 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.5-1
 - New version 4.9.5
