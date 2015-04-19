@@ -14,7 +14,7 @@ BuildArch:	noarch
 %rename	oxygen-icon-theme
 
 %description
-Oxygen icon theme. Compliant with FreeDesktop.org naming schema
+Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 
 %files
 %{_iconsdir}/oxygen
