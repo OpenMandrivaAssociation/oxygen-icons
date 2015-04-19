@@ -1,19 +1,19 @@
 Summary:	Oxygen icon theme
-Name:		oxygen-icon-theme
+Name:		oxygen-icons
 Version:	14.12.1
 Release:	1
 Epoch:		1
 License:	GPL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/oxygen-icons-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	kde4-macros
 Provides:	kde4-icon-theme
 BuildArch:	noarch
 
 %description
-Oxygen KDE 4 icon theme. Compliant with FreeDesktop.org naming schema
+Oxygen icon theme. Compliant with FreeDesktop.org naming schema
 
 %files
 %{_iconsdir}/oxygen
