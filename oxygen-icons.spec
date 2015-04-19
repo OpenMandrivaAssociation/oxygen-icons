@@ -1,7 +1,7 @@
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
 Version:	14.12.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Graphical desktop/KDE
@@ -11,6 +11,7 @@ BuildRequires:	cmake
 BuildRequires:	kde4-macros
 Provides:	kde4-icon-theme
 BuildArch:	noarch
+%rename	oxygen-icons-theme
 
 %description
 Oxygen icon theme. Compliant with FreeDesktop.org naming schema
