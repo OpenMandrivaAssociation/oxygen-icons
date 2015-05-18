@@ -1,6 +1,6 @@
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		1
 License:	GPL
