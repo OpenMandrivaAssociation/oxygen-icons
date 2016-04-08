@@ -1,15 +1,20 @@
+%define major	5
+
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
-Version:	15.04.3
-Release:	5
-Epoch:		1
+Version:	5.20.0
+Release:	1
+Epoch:		2
 License:	GPL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}%{major}-%{version}.tar.xz
 BuildRequires:	cmake
-BuildRequires:	kde4-macros
-Provides:	kde4-icon-theme
+BuildRequires:	cmake(ECM)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Test)
+
+Provides:	kde5-icon-theme
 BuildArch:	noarch
 %rename	oxygen-icon-theme
 
@@ -25,13 +30,15 @@ Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 #-----------------------------------------------------------------------------
 
 %prep
-%setup -q -n oxygen-icons-%{version}
+%setup -q -n %{name}%{major}-%{version}
 
 %build
-%cmake_kde4
+%cmake_kde5
+cd ../
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 
 # automatic gtk icon cache update on rpm installs/removals
 # (see http://wiki.mandriva.com/en/Rpm_filetriggers)
