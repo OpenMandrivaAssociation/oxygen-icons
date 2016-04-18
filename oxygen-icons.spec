@@ -4,7 +4,7 @@
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
 Version:	5.21.0
-Release:	1
+Release:	2
 Epoch:		2
 License:	GPL
 Group:		Graphical desktop/KDE
@@ -45,12 +45,12 @@ cd ../
 # (see http://wiki.mandriva.com/en/Rpm_filetriggers)
 install -d %{buildroot}%{_var}/lib/rpm/filetriggers
 cat > %{buildroot}%{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.filter << EOF
-^./usr/share/icons/oxygen/base/
+^./usr/share/icons/oxygen/
 EOF
 cat > %{buildroot}%{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.script << EOF
 #!/bin/sh
 if [ -x /usr/bin/gtk-update-icon-cache ]; then 
-  /usr/bin/gtk-update-icon-cache --force --quiet /usr/share/icons/oxygen/base
+  /usr/bin/gtk-update-icon-cache --force --quiet /usr/share/icons/oxygen/
 fi
 EOF
 chmod 755 %{buildroot}%{_var}/lib/rpm/filetriggers/gtk-icon-cache-oxygen.script
