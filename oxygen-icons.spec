@@ -3,7 +3,7 @@
 
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
-Version:	5.100.0
+Version:	5.101.0
 Release:	1
 Epoch:		2
 License:	GPL
