@@ -3,13 +3,13 @@
 
 Summary:	Oxygen icon theme
 Name:		oxygen-icons
-Version:	5.112.0
-Release:	2
+Version:	5.113.0
+Release:	1
 Epoch:		2
 License:	GPL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}%{major}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
@@ -30,7 +30,7 @@ Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 #-----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}%{major}-%{version}
+%autosetup -p1
 
 %build
 %cmake_kde5
